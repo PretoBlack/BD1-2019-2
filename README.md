@@ -3,13 +3,20 @@ SQL Exercicio 1
 Banco de dados pedido produto.
 
 cliente(id_cliente,nome,endereco,telefone)
+
 produto(id_produto, nome, preco, quantidade_estoque)
+
 pedido (id_pedido, id_cliente, data_pedido, data_entrega) fk: id_cliente
+
 pedido_produto(id_pedido,id_produto,preco_venda,quantidade) fk: id_pedido, id_produto
 
+
 Criar o arquivo create.sql (create das tabelas e das sequences).
+
 Criar o arquivo drop (drop das tabelas e das sequences).
+
 Criar o arquivo insert (com o insert das tabelas).
+
 ----------------------------------------------------------------------------------------------
 
 SQL Exercicio 2
