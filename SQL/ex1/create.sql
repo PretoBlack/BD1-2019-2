@@ -29,8 +29,8 @@ CONSTRAINT fk_pedido_produto_id_pedido FOREIGN KEY (id_pedido) REFERENCES pedido
 CONSTRAINT fk_pedido_produto_id_produto FOREIGN KEY (id_produto) REFERENCES produto
 );
 
-CREATE SEQUENCE scliente;
+CREATE SEQUENCE s_cliente;
 
-CREATE SEQUENCE sproduto;
+CREATE SEQUENCE s_produto;
 
-CREATE SEQUENCE spedido;
+CREATE SEQUENCE s_pedido;

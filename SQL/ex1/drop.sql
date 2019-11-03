@@ -6,8 +6,8 @@ DROP TABLE cliente;
 
 DROP TABLE produto;
 
-DROP SEQUENCE scliente;
+DROP SEQUENCE s_cliente;
 
-DROP SEQUENCE spedido;
+DROP SEQUENCE s_pedido;
 
-DROP SEQUENCE sproduto;
+DROP SEQUENCE s_produto;
