@@ -29,35 +29,38 @@ INSERT INTO produto
 INSERT INTO produto 
 (id_produto, nome, preco, quantidade_estoque) VALUES 
 (s_produto.nextval, 'Chocolate', 6.50, 25);
+INSERT INTO produto 
+(id_produto, nome, preco, quantidade_estoque) VALUES 
+(s_produto.nextval, 'Mesa', 200, 3);
 
 INSERT INTO pedido
 (id_pedido,id_cliente, data_pedido, data_entrega) VALUES
-(s_pedido.nextval, 5, '11-aug-2019', '05-sep-2019');
+(s_pedido.nextval, 5, '11-ago-2019', '05-set-2019');
 INSERT INTO pedido
 (id_pedido,id_cliente, data_pedido, data_entrega) VALUES
 (s_pedido.nextval, 1, '02-jun-2019', '02-jul-2019');
 INSERT INTO pedido
 (id_pedido,id_cliente, data_pedido, data_entrega) VALUES
-(s_pedido.nextval, 3, '23-may-2019', '30-may-2019');
+(s_pedido.nextval, 3, '23-mai-2019', NULL);
 INSERT INTO pedido
 (id_pedido,id_cliente, data_pedido, data_entrega) VALUES
 (s_pedido.nextval, 4, '31-jan-2019', '12-mar-2019');
 INSERT INTO pedido
 (id_pedido,id_cliente, data_pedido, data_entrega) VALUES
-(s_pedido.nextval, 2, '29-oct-2019', '22-nov-2019');
+(s_pedido.nextval, 2, '29-out-2019', '22-nov-2019');
 
 INSERT INTO pedido_produto
 (id_pedido, id_produto, preco_venda, quantidade) VALUES
-(3, 2, 3, 100);
+(3, 2, 400, 100);
 INSERT INTO pedido_produto
 (id_pedido, id_produto, preco_venda, quantidade) VALUES
-(4, 3, 4.50, 150);
+(4, 3, 94, 150);
 INSERT INTO pedido_produto
 (id_pedido, id_produto, preco_venda, quantidade) VALUES
-(1, 5, 2.45, 200);
+(1, 5, 450, 200);
 INSERT INTO pedido_produto
 (id_pedido, id_produto, preco_venda, quantidade) VALUES
-(5, 1, 1.50, 250);
+(5, 1, 325, 250);
 INSERT INTO pedido_produto
 (id_pedido, id_produto, preco_venda, quantidade) VALUES
-(2, 4, 5, 300);
+(2, 6, 900, 50);
