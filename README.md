@@ -32,3 +32,15 @@ Consultas para o banco de dados pedido-produto
 7. Apresentar o código do pedido, a data, o nome do cliente para os pedidos do produto mesa.
 8. Apresentar o código do pedido, o nome do cliente e a data do pedido para os pedidos que ainda não foram entregues.
 9. Apresentar o código do pedido, nome do cliente, nome do produto, total produto (quantidade*preço do produto). Ordenar pelo código do pedido e pelo nome do produto.
+
+-----------------------------------------------------------------------------------------------
+
+SQL Exercicio 3
+
+16. Apresentar o nome dos cliente que nunca compraram o produto mesa;
+
+17. Apresentar os códigos dos pedidos com mais de 1 produto diferente em cada pedido.
+
+18. Apresentar a quantidade de pedidos com mais de 1 produto diferente em cada pedido.
+
+19. Apresentar o nome do cliente que comprou o produto mais caro.
