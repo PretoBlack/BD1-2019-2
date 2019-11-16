@@ -10,7 +10,7 @@ nome VARCHAR2(40)
 
 CREATE TABLE audiobook
 (id_audiobook NUMBER CONSTRAINT pk_audiobook PRIMARY KEY,
-titulo VARCHAR2(40),
+titulo VARCHAR2(110),
 idioma VARCHAR2(20),
 duracao NUMBER
 );
