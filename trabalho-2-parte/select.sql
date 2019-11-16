@@ -3,7 +3,8 @@ SELECT aud.titulo, aut.nome as "AUTOR"
 FROM audiobook aud INNER JOIN escreveu esc
 ON aud.id_audiobook = esc.id_audiobook
 INNER JOIN autor aut
-ON aut.id_autor = esc.id_autor;
+ON aut.id_autor = esc.id_autor
+ORDER BY aud.titulo ASC;
 
 --Mostra o nome do Narrador e a quantidadede Audiobooks que ele narrou em cada Categoria
 SELECT nar.nome as "NARRADOR", cat.nome as "CATEGORIA",COUNT(*) as "QUANTIDADE"
