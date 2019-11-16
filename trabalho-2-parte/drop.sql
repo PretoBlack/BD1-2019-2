@@ -1,20 +1,22 @@
-DROP TABLE pertence;
+DROP TABLE pertence cascade constraints;
 
-DROP TABLE ouviu;
+DROP TABLE ouviu cascade constraints;
 
-DROP TABLE narra;
+DROP TABLE narra cascade constraints;
 
-DROP TABLE escreveu;
+DROP TABLE escreveu cascade constraints;
 
-DROP TABLE usuario;
+DROP TABLE usuario cascade constraints;
 
-DROP TABLE narrador;
+DROP TABLE narrador cascade constraints;
 
-DROP TABLE categoria;
+DROP TABLE categoria cascade constraints;
 
-DROP TABLE autor;
+DROP TABLE autor cascade constraints;
 
-DROP TABLE audiobook;
+DROP TABLE audiobook cascade constraints;
+
+DROP TABLE assinante cascade constraints;
 
 DROP SEQUENCE s_audiobook;
 
