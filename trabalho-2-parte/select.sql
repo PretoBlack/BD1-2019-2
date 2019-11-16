@@ -42,7 +42,7 @@ ON ass.id_usuario = usu.id_usuario
 WHERE usu.data_nascimento > to_date('1990', 'yyyy')
 AND usu.data_nascimento < to_date('2010', 'yyyy');
 
--- Mostra de quais categorias os usuários já ouviram audiobooks e a quantidade em cada categoria
+-- Mostra de quais categorias os usuários já ouviram mais de um audiobook e a quantidade em cada categoria
 SELECT  us.nome, cat.nome as "Categoria", count(*) as "Qtd por categoria"
 FROM usuario us
 INNER JOIN ouviu o ON us.id_usuario = o.id_usuario
@@ -50,7 +50,8 @@ INNER JOIN audiobook ab ON o.id_audiobook = ab.id_audiobook
 INNER JOIN pertence p ON p.id_audiobook = ab.id_audiobook
 INNER JOIN categoria cat ON cat.id_categoria = p.id_categoria
 GROUP BY cat.nome, us.id_usuario, us.nome
-ORDER BY us.nome ASC;
+HAVING count(*) > 1
+ORDER BY us.nome ASC
 
 -- Mostra os autores que possuem mais de um audiobook no catálogo e a quantidade
 SELECT a.nome, count(*) as "número de livros"
