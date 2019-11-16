@@ -1,6 +1,6 @@
 CREATE TABLE categoria
 (id_categoria NUMBER CONSTRAINT pk_categoria PRIMARY KEY,
-nome VARCHAR2(20)
+nome VARCHAR2(40)
 );
 
 CREATE TABLE narrador
@@ -10,7 +10,8 @@ nome VARCHAR2(40)
 
 CREATE TABLE audiobook
 (id_audiobook NUMBER CONSTRAINT pk_audiobook PRIMARY KEY,
-idioma VARCHAR2(15),
+titulo VARCHAR2(40),
+idioma VARCHAR2(20),
 duracao NUMBER
 );
 
@@ -24,7 +25,7 @@ CREATE TABLE usuario
 nome VARCHAR2(40),
 data_nascimento DATE,
 email VARCHAR2(30) CONSTRAINT unique_usuario UNIQUE,
-pais VARCHAR2(15),
+pais VARCHAR2(20),
 telefone VARCHAR2(20),
 senha VARCHAR2(20)
 );
