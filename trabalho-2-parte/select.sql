@@ -67,3 +67,11 @@ FROM audiobook ab
 INNER JOIN ouviu o ON ab.id_audiobook = o.id_audiobook
 INNER JOIN usuario us ON o.id_usuario = us.id_usuario
 INNER JOIN assinante p ON us.id_usuario = p.id_usuario;
+
+-- Mostra o id, nome do assinante e quanto tempo total ele já ouviu de audiobooks, organizado em ordem decrescente de acordo com o total escutado
+SELECT ass.id_usuario as "ID",uss.nome "Premium", sum(o.total_escutado) as "tempo total de livros"
+FROM assinante ass
+INNER JOIN usuario uss ON ass.id_usuario = uss.id_usuario
+INNER JOIN ouviu o ON uss.id_usuario = o.id_usuario
+GROUP BY uss.nome, ass.id_usuario
+ORDER by  sum(o.total_escutado) DESC;
